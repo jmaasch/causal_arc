@@ -1,5 +1,10 @@
 # CausalARC: Abstract Reasoning with Causal World Models
 
+This repository houses the source code for generating CausalARC tasks, as well as static datasets of presampled tasks (`data/static_evaluation_set/`) and text prompts (`data/prompts/`).
+
+**Coming soon: At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. Documentation will be provided for easy usage with little overhead. Datasets will be hosted on Hugging Face.**
+
+
 **Abstract**
 
 >Reasoning requires adaptation to novel problem settings under limited data and distribution shift. This work introduces CausalARC: an experimental testbed for AI reasoning in low-data and out-of-distribution regimes, modeled after the Abstraction and Reasoning Corpus (ARC). Each CausalARC reasoning task is sampled from a fully specified *causal world model*, formally expressed as a structural causal model. Principled data augmentations provide observational, interventional,  and counterfactual feedback about the world model in the form of few-shot, in-context learning demonstrations. As a proof-of-concept, we illustrate the use of CausalARC for four language model evaluation settings: (1) abstract reasoning with test-time training, (2) counterfactual reasoning with in-context learning, (3) program synthesis, and (4) causal discovery with logical reasoning. 
@@ -10,8 +15,6 @@
     <i>The CausalARC testbed for reasoning evaluation.</i>
 </p>
 <br>
-
-**Coming soon: At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. Documentation will be provided for easy usage with little overhead. Datasets will be hosted on Hugging Face.**
 
 ## Respository structure
 
