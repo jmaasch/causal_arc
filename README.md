@@ -3,7 +3,7 @@
 Coming soon: At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. The static dataset will be hosted on Hugging Face.
 
 <p align="center">
-    <img src="data/images/causal_arc.png" width="250"><br>
+    <img src="data/images/causal_arc.png" width="750"><br>
     <i>The CausalARC testbed for reasoning evaluation.</i>
 </p>
 
