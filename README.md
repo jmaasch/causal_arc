@@ -11,12 +11,6 @@
     <i>The CausalARC testbed for reasoning evaluation.</i>
 </p>
 
-<p align="center">
-    <img src="data/images/pch.png" width="250"><br>
-    <i>The Peal Causal Hierarchy: observing factual realities (L1), exerting actions to induce interventional realities (L2), <br>
-    and imagining alternate counterfactual realities (L3) (Bareinboim et al. 2022).</i>
-</p>
-
 ## Respository structure
 
 ```bash
