@@ -2,8 +2,9 @@
 
 Coming soon: At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. The static dataset will be hosted on Hugging Face.
 
-![pch](data/images/pch.png)
-
+<p align="center">
+    <img src="data/images/pch.png" width="300">
+</p>
 
 **Abstract**
 
