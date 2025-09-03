@@ -1,22 +1,23 @@
 # CausalARC: Abstract Reasoning with Causal World Models
 
-Coming soon: At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. The static dataset will be hosted on Hugging Face.
+**Coming soon:** At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. Datasets will be hosted on Hugging Face.
+
+This work extends and reconceptualizes the Abstraction and Reasoning Corpus general intelligence benchmark ([ARC-AGI](https://arcprize.org/arc-agi)) to support causal reasoning evaluation under limited data and distribution shift. We introduce **CausalARC**: an experimental testbed for reasoning composed of ARC-like tasks sampled from fully specified causal world models. World models are expressed as probabilistic structural causal models (SCMs), a rich formalism for representing data generating processes and simulating hypothetical outcomes. CausalARC an open-ended playground for testing reasoning hypotheses at all three levels of the Pearl Causal Hierarchy, with an emphasis on abstract, logical, and counterfactual reasoning.
 
 <p align="center">
     <img src="data/images/causal_arc.png" width="750"><br>
     <i>The CausalARC testbed for reasoning evaluation.</i>
 </p>
 
+**Abstract**
+
+>Reasoning requires adaptation to novel problem settings under limited data and distribution shift. This work introduces CausalARC: an experimental testbed for AI reasoning in low-data and out-of-distribution regimes, modeled after the Abstraction and Reasoning Corpus (ARC). Each CausalARC reasoning task is sampled from a fully specified *causal world model*, formally expressed as a structural causal model. Principled data augmentations provide observational, interventional,  and counterfactual feedback about the world model in the form of few-shot, in-context learning demonstrations. As a proof-of-concept, we illustrate the use of CausalARC for four language model evaluation settings: (1) abstract reasoning with test-time training, (2) counterfactual reasoning with in-context learning, (3) program synthesis, and (4) causal discovery with logical reasoning. 
 
 <p align="center">
     <img src="data/images/pch.png" width="250"><br>
     <i>The Peal Causal Hierarchy: observing factual realities (L1), exerting actions to induce interventional realities (L2), <br>
     and imagining alternate counterfactual realities (L3) (Bareinboim et al. 2022).</i>
 </p>
-
-**Abstract**
-
->Reasoning requires adaptation to novel problem settings under limited data and distribution shift. This work introduces CausalARC: an experimental testbed for AI reasoning in low-data and out-of-distribution regimes, modeled after the Abstraction and Reasoning Corpus (ARC). Each CausalARC reasoning task is sampled from a fully specified *causal world model*, formally expressed as a structural causal model. Principled data augmentations provide observational, interventional,  and counterfactual feedback about the world model in the form of few-shot, in-context learning demonstrations. As a proof-of-concept, we illustrate the use of CausalARC for four language model evaluation settings: (1) abstract reasoning with test-time training, (2) counterfactual reasoning with in-context learning, (3) program synthesis, and (4) causal discovery with logical reasoning. 
 
 ## Respository structure
 
