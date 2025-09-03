@@ -2,7 +2,7 @@
 
 **Overview**
 
-This work extends and reconceptualizes the Abstraction and Reasoning Corpus general intelligence benchmark ([ARC-AGI](https://arcprize.org/arc-agi)) to support causal reasoning evaluation under limited data and distribution shift. We introduce **CausalARC**: an experimental testbed for reasoning composed of ARC-like tasks sampled from fully specified causal world models. World models are expressed as probabilistic structural causal models (SCMs), a rich formalism for representing data generating processes and simulating hypothetical outcomes. CausalARC an open-ended playground for testing reasoning hypotheses at all three levels of the Pearl Causal Hierarchy, with an emphasis on abstract, logical, and counterfactual reasoning.
+This work extends and reconceptualizes the Abstraction and Reasoning Corpus general intelligence benchmark ([ARC-AGI](https://arcprize.org/arc-agi)) to support causal reasoning evaluation under limited data and distribution shift. We introduce CausalARC: an experimental testbed for reasoning composed of ARC-like tasks sampled from fully specified causal world models. World models are expressed as probabilistic structural causal models (SCMs), a rich formalism for representing data generating processes and simulating hypothetical outcomes. CausalARC an open-ended playground for testing reasoning hypotheses at all three levels of the Pearl Causal Hierarchy, with an emphasis on abstract, logical, and counterfactual reasoning.
 
 `**Coming soon:** At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. Documentation will be provided for quick-start usage. Datasets will be hosted on Hugging Face.`
 
