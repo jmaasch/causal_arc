@@ -1,19 +1,15 @@
 # CausalARC: Abstract Reasoning with Causal World Models
 
-**Overview**
+**Abstract**
 
-This work extends and reconceptualizes the Abstraction and Reasoning Corpus general intelligence benchmark ([ARC-AGI](https://arcprize.org/arc-agi)) to support causal reasoning evaluation under limited data and distribution shift. We introduce CausalARC: an experimental testbed for reasoning composed of ARC-like tasks sampled from fully specified causal world models. World models are expressed as probabilistic structural causal models (SCMs), a rich formalism for representing data generating processes and simulating hypothetical outcomes. CausalARC an open-ended playground for testing reasoning hypotheses at all three levels of the Pearl Causal Hierarchy, with an emphasis on abstract, logical, and counterfactual reasoning.
+>Reasoning requires adaptation to novel problem settings under limited data and distribution shift. This work introduces CausalARC: an experimental testbed for AI reasoning in low-data and out-of-distribution regimes, modeled after the Abstraction and Reasoning Corpus (ARC). Each CausalARC reasoning task is sampled from a fully specified *causal world model*, formally expressed as a structural causal model. Principled data augmentations provide observational, interventional,  and counterfactual feedback about the world model in the form of few-shot, in-context learning demonstrations. As a proof-of-concept, we illustrate the use of CausalARC for four language model evaluation settings: (1) abstract reasoning with test-time training, (2) counterfactual reasoning with in-context learning, (3) program synthesis, and (4) causal discovery with logical reasoning. 
 
-`**Coming soon:** At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. Documentation will be provided for quick-start usage. Datasets will be hosted on Hugging Face.`
+`**Coming soon:** At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. Documentation will be provided for easy usage with little overhead. Datasets will be hosted on Hugging Face.`
 
 <p align="center">
     <img src="data/images/causal_arc.png" width="750"><br>
     <i>The CausalARC testbed for reasoning evaluation.</i>
 </p>
-
-**Abstract**
-
->Reasoning requires adaptation to novel problem settings under limited data and distribution shift. This work introduces CausalARC: an experimental testbed for AI reasoning in low-data and out-of-distribution regimes, modeled after the Abstraction and Reasoning Corpus (ARC). Each CausalARC reasoning task is sampled from a fully specified *causal world model*, formally expressed as a structural causal model. Principled data augmentations provide observational, interventional,  and counterfactual feedback about the world model in the form of few-shot, in-context learning demonstrations. As a proof-of-concept, we illustrate the use of CausalARC for four language model evaluation settings: (1) abstract reasoning with test-time training, (2) counterfactual reasoning with in-context learning, (3) program synthesis, and (4) causal discovery with logical reasoning. 
 
 <p align="center">
     <img src="data/images/pch.png" width="250"><br>
@@ -25,7 +21,7 @@ This work extends and reconceptualizes the Abstraction and Reasoning Corpus gene
 
 ```bash
 .
-├── causal_arc
+├── causal_arc # All source code for CausalARC (task generation, data processing, etc).
 │   ├── carc_augment.py
 │   ├── carc_tasks_counting.py
 │   ├── carc_tasks_extension.py
@@ -34,7 +30,7 @@ This work extends and reconceptualizes the Abstraction and Reasoning Corpus gene
 │   ├── carc_utils.py
 │   └── carc.py
 ├── data
-│   ├── prompts
+│   ├── prompts # Prompt dictionaries submitted to LLMs for langchain experiments.
 │   │   ├── causal_discovery
 │   │   │   └── discovery_logical_compose_and_xor_prompts.json
 │   │   ├── counterfactual_reasoning
@@ -46,7 +42,7 @@ This work extends and reconceptualizes the Abstraction and Reasoning Corpus gene
 │   │       ├── program_synthesis_nexamples4_prompts.json
 │   │       ├── program_synthesis_nexamples6_prompts.json
 │   │       └── program_synthesis_nexamples8_prompts.json
-│   └── static_evaluation_set
+│   └── static_evaluation_set # The version of the static dataset used in MARC TTT experiments.
 │       └── v0_09-01-25
 │           ├── counting
 │           │   ├── causal_arc_counting_solutions.json
@@ -66,6 +62,6 @@ This work extends and reconceptualizes the Abstraction and Reasoning Corpus gene
 │               └── causal_arc_ordering.json
 ├── demos # Jupyter notebooks coming soon.
 ├── experiments
-│   └── marc_results
+│   └── marc_results # Raw output dictionaries from MARC TTT experiments.
 └── README.md
 ```
