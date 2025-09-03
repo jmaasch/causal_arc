@@ -11,7 +11,7 @@
 </p>
 <br>
 
-`**Coming soon:** At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. Documentation will be provided for easy usage with little overhead. Datasets will be hosted on Hugging Face.`
+**Coming soon: At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. Documentation will be provided for easy usage with little overhead. Datasets will be hosted on Hugging Face.**
 
 ## Respository structure
 
