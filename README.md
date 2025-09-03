@@ -3,7 +3,13 @@
 Coming soon: At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. The static dataset will be hosted on Hugging Face.
 
 <p align="center">
-    <img src="data/images/pch.png" width="300"><br>
+    <img src="data/images/causal_arc.png" width="250"><br>
+    <i>The CausalARC testbed for reasoning evaluation.</i>
+</p>
+
+
+<p align="center">
+    <img src="data/images/pch.png" width="250"><br>
     <i>The Peal Causal Hierarchy: observing factual realities (L1), exerting actions to induce interventional realities (L2), <br>
     and imagining alternate counterfactual realities (L3) (Bareinboim et al. 2022).</i>
 </p>
