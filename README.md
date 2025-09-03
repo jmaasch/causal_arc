@@ -50,12 +50,8 @@ This repository houses the source code for generating CausalARC tasks, as well a
 │           │   ├── causal_arc_extension_solutions.json
 │           │   └── causal_arc_extension.json
 │           ├── logical
-│           │   ├── causal_arc_logical_alternate.json
-│           │   ├── causal_arc_logical_and.json
-│           │   ├── causal_arc_logical_compose.json
-│           │   ├── causal_arc_logical_or.json
 │           │   ├── causal_arc_logical_solutions.json
-│           │   └── causal_arc_logical_xor.json
+│           │   └── causal_arc_logical.json
 │           └── ordering
 │               ├── causal_arc_ordering_solutions.json
 │               └── causal_arc_ordering.json
