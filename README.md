@@ -3,7 +3,7 @@
 Coming soon: At camera-ready, this anonymous repository will be replaced with a public project page hosted on GitHub pages. The static dataset will be hosted on Hugging Face.
 
 <p align="center">
-    <img src="data/images/pch.png" width="300">
+    <img src="data/images/pch.png" width="300"><br>
     The Peal Causal Hierarchy: observing factual realities (L1), exerting actions to induce interventional realities (L2), and imagining alternate counterfactual realities (L3) (Bareinboim et al. 2022).
 </p>
 
