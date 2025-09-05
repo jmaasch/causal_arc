@@ -55,7 +55,8 @@ This repository houses the source code for generating CausalARC tasks, as well a
 │           └── ordering
 │               ├── causal_arc_ordering_solutions.json
 │               └── causal_arc_ordering.json
-├── demos # Jupyter notebooks coming soon.
+├── demos # More Jupyter notebooks coming soon.
+│   └── preview_causal_arc_tasks.ipynb
 ├── experiments
 │   └── marc_results # Raw output dictionaries from MARC TTT experiments.
 └── README.md
