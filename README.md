@@ -2,10 +2,12 @@
 
 This repository houses the source code for generating CausalARC tasks, as well as static datasets of presampled tasks (`data/static_evaluation_set/`) and text prompts (`data/prompts/`).
 
+See our full project page here: [https://jmaasch.github.io/carc/](https://jmaasch.github.io/carc/)
+
 
 **Abstract**
 
->This work introduces CausalARC: an experimental testbed for AI reasoning in low-data and out-of-distribution regimes, modeled after the Abstraction and Reasoning Corpus (ARC). Each CausalARC reasoning task is sampled from a fully specified *causal world model*, formally expressed as a structural causal model. Principled data augmentations provide observational, interventional,  and counterfactual feedback about the world model in the form of few-shot, in-context learning demonstrations. As a proof-of-concept, we illustrate the use of CausalARC for four language model evaluation settings: (1) abstract reasoning with test-time training, (2) counterfactual reasoning with in-context learning, (3) program synthesis, and (4) causal discovery with logical reasoning. 
+>On-the-fly reasoning often requires adaptation to novel problems under limited data and distribution shift. This work introduces CausalARC: an experimental testbed for AI reasoning in low-data and out-of-distribution regimes, modeled after the [Abstraction and Reasoning Corpus](https://arcprize.org/) (ARC). Each CausalARC reasoning task is sampled from a fully specified *causal world model*, formally expressed as a structural causal model (SCM). Principled data augmentations provide observational, interventional, and counterfactual feedback about the world model in the form of few-shot, in-context learning demonstrations. As a proof-of-concept, we illustrate the use of CausalARC for four language model evaluation settings: (1) abstract reasoning with test-time training, (2) counterfactual reasoning with in-context learning, (3) program synthesis, and (4) causal discovery with logical reasoning. Within- and between-model performance varied heavily across tasks, indicating room for significant improvement in language model reasoning.
 
 <br>
 <p align="center">
@@ -53,9 +55,20 @@ This repository houses the source code for generating CausalARC tasks, as well a
 │           └── ordering
 │               ├── causal_arc_ordering_solutions.json
 │               └── causal_arc_ordering.json
-├── demos # More Jupyter notebooks coming soon.
-│   └── preview_causal_arc_tasks.ipynb
+├── demos
+│   ├── causal_discovery_pc_algorithm.ipynb # Run PC algorithm on a CausalARC SCM.
+│   ├── preview_causal_arc_tasks.ipynb # View examples from all CausalARC SCMs.
+│   ├── prompt_generation # Directory for demonstrations of prompt sampling functions.
+│   │   ├── prompt_causal_discovery_logical_composition.ipynb
+│   │   ├── prompt_counterfactual_counting_ordering_extension.ipynb
+│   │   └── prompt_program_synthesis.ipynb
+│   └── task_sampling # Directory for demonstrations of task / grid sampling functions.
+│       ├── causal_arc_task_construction_counting.ipynb
+│       ├── causal_arc_task_construction_extension.ipynb
+│       ├── causal_arc_task_construction_logical.ipynb
+│       └── causal_arc_task_construction_ordering.ipynb
 ├── experiments
-│   └── marc_results # Raw output dictionaries from MARC TTT experiments.
+│   ├── langchain # Directory for langchain scripts to query proprietary models.
+│   └── marc_results # Directory for raw output dictionaries from MARC TTT experiments.
 └── README.md
 ```
