@@ -1,9 +1,8 @@
 # CausalARC: Abstract Reasoning with Causal World Models
 
-This repository houses the source code for generating CausalARC tasks, as well as static datasets of presampled tasks (`data/static_evaluation_set/`) and text prompts (`data/prompts/`).
-
 Spotlight Paper ★ NeurIPS 2025 Workshop: [Bridging Language, Agent, and World Models for Reasoning and Planning (LAW)](https://sites.google.com/view/law-2025/home?authuser=0)
 
+Please cite this work:
 ```
 @inproceedings{maasch2025causalarc,
    title={CausalARC: Abstract Reasoning with Causal World Models},
@@ -11,6 +10,8 @@ Spotlight Paper ★ NeurIPS 2025 Workshop: [Bridging Language, Agent, and World 
    booktitle={NeurIPS 2025 Workshop on Bridging Language, Agent, and World Models for Reasoning and Planning}
 }
 ```
+
+This repository houses the source code for generating CausalARC tasks, as well as static datasets of presampled tasks (`data/static_evaluation_set/`) and text prompts (`data/prompts/`).
 
 See our full project page here: [https://jmaasch.github.io/carc/](https://jmaasch.github.io/carc/)
 
