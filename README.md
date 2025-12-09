@@ -1,20 +1,12 @@
 # CausalARC: Abstract Reasoning with Causal World Models
 
-Spotlight Paper ★ NeurIPS 2025 Workshop: [Bridging Language, Agent, and World Models for Reasoning and Planning (LAW)](https://sites.google.com/view/law-2025/home?authuser=0)
+## About this work 
 
-Please cite this work:
-```
-@inproceedings{maasch2025causalarc,
-   title={CausalARC: Abstract Reasoning with Causal World Models},
-   author={Maasch, Jacqueline and Kalantari, John and Khezeli, Kia},
-   booktitle={NeurIPS 2025 Workshop on Bridging Language, Agent, and World Models for Reasoning and Planning}
-}
-```
+Spotlight Paper ★ NeurIPS 2025 Workshop: [Bridging Language, Agent, and World Models for Reasoning and Planning (LAW)](https://sites.google.com/view/law-2025/home?authuser=0)
 
 This repository houses the source code for generating CausalARC tasks, as well as static datasets of presampled tasks (`data/static_evaluation_set/`) and text prompts (`data/prompts/`).
 
 See our full project page here: [https://jmaasch.github.io/carc/](https://jmaasch.github.io/carc/)
-
 
 **Abstract**
 
@@ -26,6 +18,17 @@ See our full project page here: [https://jmaasch.github.io/carc/](https://jmaasc
     <i>The CausalARC testbed for reasoning evaluation.</i>
 </p>
 <br>
+
+## How to cite
+
+Please cite this work:
+```
+@inproceedings{maasch2025causalarc,
+   title={CausalARC: Abstract Reasoning with Causal World Models},
+   author={Maasch, Jacqueline and Kalantari, John and Khezeli, Kia},
+   booktitle={NeurIPS 2025 Workshop on Bridging Language, Agent, and World Models for Reasoning and Planning}
+}
+```
 
 ## Respository structure
 
