@@ -2,13 +2,13 @@
 
 ## About this work 
 
-★ **Spotlight Paper** – NeurIPS 2025 Workshop: [Bridging Language, Agent, and World Models for Reasoning and Planning (LAW)](https://sites.google.com/view/law-2025/home?authuser=0)
+★ **Spotlight paper @ NeurIPS 2025 Workshop**: [Bridging Language, Agent, and World Models for Reasoning and Planning (LAW)](https://sites.google.com/view/law-2025/home?authuser=0)
 
 ★ **Contents.** This repository houses the source code for generating CausalARC tasks, as well as static datasets of presampled tasks (`data/static_evaluation_set/`) and text prompts (`data/prompts/`).
 
 ★ **Learn more.** See our full project page here: [https://jmaasch.github.io/carc/](https://jmaasch.github.io/carc/)
 
-★ **Want to contribute?** If you are interested in contributing to this open source project, contact me on [LinkedIn](https://www.linkedin.com/in/jmaasch/).
+★ **Contribute.** If you are interested in contributing to this open source project, contact me on [LinkedIn](https://www.linkedin.com/in/jmaasch/).
 
 ## Abstract
 
