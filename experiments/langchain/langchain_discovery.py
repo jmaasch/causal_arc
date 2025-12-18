@@ -89,6 +89,7 @@ def make_llm(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Unified LangChain LLM caller")
     parser.add_argument("-p", "--prompt_file", required=True, help="JSON file containing user prompts")
+    parser.add_argument("-o", "--out_dir", required=True, help="directory for output results")
     parser.add_argument("--provider", choices=["openai","anthropic","gemini","xai","bedrock"], default="openai")
     parser.add_argument("--model", help="Model name/alias (defaults per provider)")
     parser.add_argument("--temperature", type=float, default=0.0, help="Sampling temperature")
@@ -147,11 +148,23 @@ def main():
             print(getattr(msg, "content", msg))
             l3_response_dict[rep] = msg.text()
         
+        '''
+        if args.stream:
+            for chunk in llm.stream(prompt):
+                text = getattr(chunk, "content", None)
+                if text:
+                    print(text, end="", flush=True)
+            print()  
+        else:
+            msg = llm.invoke(prompt)
+            print(getattr(msg, "content", msg))
+        '''
+        
         response_dict[task] = {"L1": l1_response_dict, 
                                "L3": l3_response_dict}
         
     task_name_dir = args.prompt_file.split(".")[0]
-    with open(f"discovery_compose/results_{task_name_dir}_{args.model}.json", "w") as f:
+    with open(f"{args.out_dir}/results_{task_name_dir}_{args.model}.json", "w") as f:
         json.dump(response_dict, f, indent = 4) # indent for readability.
 
 

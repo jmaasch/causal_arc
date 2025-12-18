@@ -89,6 +89,7 @@ def make_llm(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Unified LangChain LLM caller")
     parser.add_argument("-p", "--prompt_file", required=True, help="JSON file containing user prompts")
+    parser.add_argument("-o", "--out_dir", required=True, help="directory for output results")
     parser.add_argument("--provider", choices=["openai","anthropic","gemini","xai","bedrock"], default="openai")
     parser.add_argument("--model", help="Model name/alias (defaults per provider)")
     parser.add_argument("--temperature", type=float, default=0.0, help="Sampling temperature")
@@ -117,6 +118,9 @@ def resolve_api_key(provider: str, args: argparse.Namespace) -> Optional[str]:
 def main():
     args = parse_args()
     api_key = resolve_api_key(args.provider, args)
+    
+    output_name = args.prompt_file.split(".")[0]
+    print("Output dir:", f"{args.out_dir}/results_{output_name}_{args.model}.json")
 
     llm = make_llm(
         provider=args.provider,
@@ -147,11 +151,23 @@ def main():
             print(getattr(msg, "content", msg))
             l3_response_dict[rep] = {"pred": msg.text(), "true": prompt_dict["test"]["output"]}
         
+        '''
+        if args.stream:
+            for chunk in llm.stream(prompt):
+                text = getattr(chunk, "content", None)
+                if text:
+                    print(text, end="", flush=True)
+            print()  
+        else:
+            msg = llm.invoke(prompt)
+            print(getattr(msg, "content", msg))
+        '''
+        
         response_dict[task] = {"L1": l1_response_dict, 
                                "L3": l3_response_dict}
         
     output_name = args.prompt_file.split(".")[0]
-    with open(f"cf_reasoning_logical_compose_updated/results_{output_name}_{args.model}.json", "w") as f:
+    with open(f"{args.out_dir}/results_{output_name}_{args.model}.json", "w") as f:
         json.dump(response_dict, f, indent = 4) # indent for readability.
 
 
