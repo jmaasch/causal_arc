@@ -1,11 +1,16 @@
 # CausalARC: Abstract Reasoning with Causal World Models
 
-This repository houses the source code for generating CausalARC tasks, as well as static datasets of presampled tasks (`data/static_evaluation_set/`) and text prompts (`data/prompts/`).
+## About this work 
 
-See our full project page here: [https://jmaasch.github.io/carc/](https://jmaasch.github.io/carc/)
+★ **Spotlight paper @ NeurIPS 2025 Workshop**: [Bridging Language, Agent, and World Models for Reasoning and Planning (LAW)](https://sites.google.com/view/law-2025/home?authuser=0)
 
+★ **Contents.** This repository houses the source code for generating CausalARC tasks, as well as static datasets of presampled tasks (`data/static_evaluation_set/`) and text prompts (`data/prompts/`).
 
-**Abstract**
+★ **Learn more.** See our full project page here: [https://jmaasch.github.io/carc/](https://jmaasch.github.io/carc/)
+
+★ **Contribute.** If you are interested in contributing to this open source project, contact me on [LinkedIn](https://www.linkedin.com/in/jmaasch/).
+
+## Abstract
 
 >On-the-fly reasoning often requires adaptation to novel problems under limited data and distribution shift. This work introduces CausalARC: an experimental testbed for AI reasoning in low-data and out-of-distribution regimes, modeled after the [Abstraction and Reasoning Corpus](https://arcprize.org/) (ARC). Each CausalARC reasoning task is sampled from a fully specified *causal world model*, formally expressed as a structural causal model (SCM). Principled data augmentations provide observational, interventional, and counterfactual feedback about the world model in the form of few-shot, in-context learning demonstrations. As a proof-of-concept, we illustrate the use of CausalARC for four language model evaluation settings: (1) abstract reasoning with test-time training, (2) counterfactual reasoning with in-context learning, (3) program synthesis, and (4) causal discovery with logical reasoning. Within- and between-model performance varied heavily across tasks, indicating room for significant improvement in language model reasoning.
 
@@ -15,6 +20,17 @@ See our full project page here: [https://jmaasch.github.io/carc/](https://jmaasc
     <i>The CausalARC testbed for reasoning evaluation.</i>
 </p>
 <br>
+
+## How to cite
+
+Please cite this work:
+```
+@inproceedings{maasch2025causalarc,
+   title={CausalARC: Abstract Reasoning with Causal World Models},
+   author={Maasch, Jacqueline and Kalantari, John and Khezeli, Kia},
+   booktitle={NeurIPS 2025 Workshop on Bridging Language, Agent, and World Models for Reasoning and Planning}
+}
+```
 
 ## Respository structure
 
